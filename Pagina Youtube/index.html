@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programacion CMV</title>
+  <style>
+    /*CODIGO CSS, ESTILOS DE LA PAGINA*/
+    /* Estilos generales */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+    }
+
+    /* Banner */
+    #banner {
+      text-align: center;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    #banner img {
+      width: 100%;
+      max-height: 185px;
+      object-fit: cover;
+    }
+
+    /* Barra de Usuario */
+    #user-bar {
+      background-color: #1c1c1c;
+      color: #fff;
+      text-align: left;
+      padding: 50px 0 60px;
+      margin-top: -10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    /* Círculo de la Imagen de Perfil */
+    #user-bar .profile-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 100px;
+      transform: translateX(320px);
+      border: 2px solid white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #user-bar .profile-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Título al lado de la Foto de Perfil */
+    #user-bar .profile-title {
+      display: flex;
+      align-items: flex-start;
+      margin-top: -70px; 
+    }
+
+    #user-bar .profile-title h1 {
+      margin: 0;
+      margin-left: 450px; /* Espacio entre la foto y el título */
+    }
+
+    #photo-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Cambiar a 5 columnas la parte de las fotos*/
+      gap: 10px;
+      padding: 20px;
+      margin-left: 295px; /* dar espacio al dashboard */
+      background-color:#1c1c1c;
+    }
+
+    
+    #toggle-dashboard {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #1c1c1c;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    /* Dashboard*/
+    #youtube-dashboard {
+      width: 240px;
+      background-color: #1c1c1c;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    /* Títulos del Dashboard*/
+    #youtube-dashboard h2 {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    /* Separador del Dashboard*/
+    .youtube-separator {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 10px 0;
+    }
+
+
+    /* Estilo de las Fotos */
+    .photo {
+      width: 100%;
+      height: 0;
+      padding-bottom: 60%;
+      background-color: #000000;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    #user-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: -20px;
+  
+  margin-left: 1007px
+}
+
+.user-button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.user-button:hover {
+  background-color: white;
+  color: #ff0000; /* Cambia el color del texto al hacer hover */
+}
+#user-buttons .user-button {
+  margin-top: -10px; 
+}
+
+  </style>
+
+</head>
+<body>
+  <!-- Banner -->
+  <div id="banner">
+    <img src="img/My project-27.png"Banner Estilo">
+  </div>
+
+  <!-- Barra de Usuario -->
+  <div id="user-bar">
+    <!-- Círculo con Borde Blanco -->
+    <div class="profile-circle">
+      <img src="img/WhatsApp Image 2023-08-10 at 4.44.07 PM (2).jpeg" alt="Foto de Perfil">
+    </div>
+    <!-- Título al lado de la Foto de Perfil -->
+    <div class="profile-title">
+      <h1>Programacion CMV</h1>
+    </div>
+    <div id="user-buttons">
+      <a href="#" class="user-button">Administrar videos</a>
+      <a href="#" class="user-button">Personalizar canal</a>
+    </div>
+    
+  </div>
+
+  
+
+  <!-- Fotos CON ESTILOS DE VIDEOS -->
+  <div id="photo-grid">
+    <!-- Cuadrícula de Fotos -->
+    <div class="photo">
+      <img src="img/c++01.png"Imagen 1">
+    </div>
+    <div class="photo">
+      <img src="img/c++02.png" alt="Imagen 2">
+    </div>
+    <div class="photo">
+      <img src="img/c++3.png" alt="Imagen 3">
+    </div>
+    <div class="photo">
+      <img src="img/c++4.png" alt="Imagen 4">
+    </div>
+    <div class="photo">
+      <img src="img/c++5.png" alt="Imagen 5">
+    </div>
+    <div class="photo">
+      <img src="img/c++6.png" alt="Imagen 6">
+    </div>
+    <div class="photo">
+      <img src="img/c++7.png" alt="Imagen 7">
+    </div>
+    <div class="photo">
+      <img src="img/c++8.png" alt="Imagen 8">
+    </div>
+    <div class="photo">
+      <img src="img/c++9.png" alt="Imagen 9">
+    </div>
+    <div class="photo">
+      <img src="img/c++10.png" alt="Imagen 10">
+    </div>
+    <div class="photo">
+      <img src="img/c++11.png" alt="Imagen 11">
+    </div>
+    <div class="photo">
+      <img src="img/c++12.png" alt="Imagen 12">
+    </div>
+    <div class="photo">
+      <img src="img/java 1.png" alt="Imagen 13">
+    </div>
+    <div class="photo">
+      <img src="img/java2.png" alt="Imagen 14">
+    </div>
+    <div class="photo">
+      <img src="img/java3.png" alt="Imagen 15">
+    </div>
+    <div class="photo">
+      <img src="img/java4.png" alt="Imagen 16">
+    </div>
+    <div class="photo">
+      <img src="img/java5.png" alt="Imagen 17">
+    </div>
+    <div class="photo">
+      <img src="img/java6.png" alt="Imagen 18">
+    </div>
+    <div class="photo">
+      <img src="img/java7.png" alt="Imagen 19">
+    </div>
+    <div class="photo">
+      <img src="img/java8.png" alt="Imagen 20">
+    </div>
+    <div class="photo">
+      <img src="img/java9.png" alt="Imagen 21">
+    </div>
+
+
+  </div>
+
+  
+  <!-- Botón de ocultar/mostrar el Dashboard -->
+  <button id="toggle-dashboard">Ocultar/Mostrar Dashboard</button>
+
+  <!-- Dashboard -->
+  <div id="youtube-dashboard">
+    <h2>Inicio</h2>
+    <h2>Explorar</h2>
+    <h2>Subir</h2>
+    <div class="youtube-separator"></div>
+    <h2>Biblioteca</h2>
+    <h2>Historial</h2>
+    <h2>Tus Videos</h2>
+    <h2>Ver Más Tarde</h2>
+    <div class="youtube-separator"></div>
+    <h2>Suscripciones</h2>
+    <h2>Más de YouTube</h2>
+    <div class="youtube-separator"></div>
+    <h2>YouTube Premium</h2>
+    <h2>Live</h2>
+    <h2>Configuración</h2>
+    <h2>Reportar Historial</h2>
+    <h2>Ayuda</h2>
+    <h2>Enviar comentarios</h2>
+  </div>
+
+  
+
+  <script>
+    const toggleButton = document.getElementById('toggle-dashboard');
+    const youtubeDashboard = document.getElementById('youtube-dashboard');
+
+    toggleButton.addEventListener('click', () => {
+      youtubeDashboard.classList.toggle('show-dashboard');
+    });
+  </script>
+
+
+</body>
+</html>
